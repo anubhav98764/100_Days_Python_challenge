@@ -11,15 +11,15 @@ programming_dictionaries["Loop"] = "the action of doing something overand over a
 # print(programming_dictionaries)
 
 # Wipe an existing dictionaries
-programming_dictionaries = {}
-print(programming_dictionaries)
+# programming_dictionaries = {}
+# print(programming_dictionaries)
 
 # edit in dictionaries
-programming_dictionaries["Bug"] = "A moth in a computer"
-print(programming_dictionaries)
+# programming_dictionaries["Bug"] = "A moth in a computer"
+# print(programming_dictionaries)
 
 # Loop through a dictionaries
-for dict in programming_dictionaries:
+# for dict in programming_dictionaries:
     # print(dict) print only key
     # print(programming_dictionaries[key]) - print whole key and value
 
@@ -35,15 +35,61 @@ for dict in programming_dictionaries:
 # print(nested_list[2][1])
 
 # multiple key and value in dictionaries
- student_data = {
-    "Alice": {
-        "subjects": ["Math", "Science", "English"],
-        "scores": [85, 90, 78]
-    },
-    "Bob": {
-        "subjects": ["History", "Math", "Art"],
-        "scores": [88, 76, 92]
-    }
-}
-print(student_data["Bob"]["subjects"][2])
+# student_data = {
+#     "Alice": {
+#         "subjects": ["Math", "Science", "English"],
+#         "scores": [85, 90, 78]
+#     },
+#     "Bob": {
+#         "subjects": ["History", "Math", "Art"],
+#         "scores": [88, 76, 92]
+#     }
+# }
+# print(student_data["Bob"]["subjects"][2])
+
+# project day 9
+
+logo = """
+                         ___________
+                                  /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-'''---------'' '-'
+                          )"""""""(
+                         /_________\
+                       .-------------.
+                      /_______________\
+"""
+
+print(logo)
+# user input
+def maximum_value(bidding_dict):
+    high_bid = 0
+    winner = ""
+    for bidding in bidding_dict:
+        bid_amount = bidding_dict[bidding]
+        if bid_amount > high_bid:
+            high_bid = bid_amount
+            winner = bidding
+    print(f"The winner is {winner} with a bid of {high_bid}")
+    
+continue_loop = True
+bid = {}
+while continue_loop:
+    name = input("What is your name ?:")
+    price = int(input("What is your bid?: $"))
+    bid[name] = price
+    should_continue = input("Are there any other bidders? Type 'yes or 'no'.").lower()
+    if should_continue == "no":
+        continue_loop = False
+    elif should_continue == "yes":
+        print("\n" * 20)
+
+maximum_value(bid)
+
+
+
+
 
