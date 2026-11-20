@@ -25,7 +25,7 @@ score  = 0
 # a = int("5") / int(2.7)
 # print(type(a))
 
-# project
+# project day 2
 print("Welcome to the tip calculator!")
 a = int(input("What was the total bill?"))
 z = int(input("How much tip would you like yo give? 10 ,12 ,15:"))
